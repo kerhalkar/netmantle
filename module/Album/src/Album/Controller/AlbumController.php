@@ -11,7 +11,6 @@ class AlbumController extends AbstractActionController
     protected $albumTable;
     public function indexAction()
     {
-        echo 'Git Test';
         return new ViewModel(array(
             'albums' => $this->getAlbumTable()->fetchAll(),
         ));
